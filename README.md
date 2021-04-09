@@ -1,45 +1,47 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# German ultrahard Hangman
+# Song recommendation App Gnoosic
 *Sarah Vonderberg*
 
 *[DAFT, Remote Campus & MAR21]*
 
 ## Content
 - [Project Description](#project-description)
-- [Rules](#rules)
 - [Workflow](#workflow)
 - [Organization](#organization)
 - [Links](#links)
 
 ## Project Description
-This is a classic hangman game with a German twist. All words that you have to guess are in German and extremely hard.
+I developed a simple app that will be able to recommend you a song depending on your input. If the song is in the current billboard Top 100 you will be recommended a song from there. If the song is not in the cureent billboard Top 100 I will use the spotify API to recommend you a song according to their music rating algorithm.
 
-## Rules
-You have to guess the letter or the complete word in order to win.
-As long as your guess is right you can keep on guessing. However you only have 5 wrong guesses before you loose the game. Don't worry, you can play again!
 
 ## Workflow
-First I researched the game and played it a couple of times to outlines the rules and exceptions.
-Then I started to organize my trello board, to see which tasks I need to finish (and by when) in order to have all things needed for the project.
-After that I wrote my pseudocode to figure out what type of functions I will be needing for my game. I added the functions to my trello board to not loose oversight.
-I started to build my git repo by forking the TA's repo, adding a gitignore and making sure it looks nice and clean.
-After all the organizing I started to code.
-During the coding I tested many of my gaming options to not miss any case.
-After the raw version of the code was finished, I started testing for bugs, exceptions and to "prettyfie" the game adding breaks and timing.
-After finalizing everything I made my presentation and added the updated readme file.
+1) Organisation and scope of the project on trello
+2) github repo setup
+3) webscraping the billboard top 100, saving to a dataframe
+3) prototype app (recommendation if the song is in the billboard top 100)
+4) config file for spotify api
+5) webscraping the big data from spotify for my machine learning algorithm
+6) machine learning algorithm
+7) finish app
+8) update readme
+9) video presentation
 
 
 ## Organization
-I organised my project with trello into tasks which are either in progress, almost done , done or in review. I also assigned deadlines to some tasks in order to be reminded.
+I organised my project with trello into tasks which are either in progress, done or in review. I also assigned deadlines to some tasks in order to be reminded.
 
-I tried to keep it as clean and lean as possible, so it contains a gitignore, a readme, my code in a jupyter notebook, as well as my code in .py file so people can run it on their terminal.
+I tried to keep my github repo as clean and lean as possible, so it contains:
+- a gitignore
+- Prototyp App (inludes: the code for the app, the code for the spotify music clustering algorithm)
+- a readme file
+- Spotify.csv (a csv file with the necessary spotify songs for my machine learning algorithm)
+- webscraping_datframes (the code used for collecting the data needed for spotify.csv)
 
 ## Links
-Include links to your repository, slides and kanban board. Feel free to include any other links associated with your project.
 
-[Repository](https://github.com/Salevo/Project-Week-1-Build-Your-Own-Game)  
+[Repository](https://github.com/Salevo/Gnoosic)  
 
-[Slides](https://drive.google.com/file/d/17tHtBMUqGDMOZoJVluFwWxX4IPsRyH6o/view?usp=sharing)
+[Slides](https://drive.google.com/file/d/1mmOFZpkBeuvlXcW-ySUY82JALJ4sTN6V/view?usp=sharing)
 
-[Trello](https://trello.com/b/HFYxcpUn/project-1-german-hangman)  
+[Trello](https://trello.com/b/U06GB3Eg/gnoosic)  
